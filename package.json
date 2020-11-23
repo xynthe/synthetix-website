@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build",
+		"build": "next build && next export",
 		"postbuild": "if [[ ${BUILD_SITEMAP} ]]; then next-sitemap --config next-sitemap.js; fi",
 		"start": "next start --port 8888",
 		"start:tunnel": "ngrok http 8888",
